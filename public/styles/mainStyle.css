@@ -1,0 +1,173 @@
+body{
+  text-align: center;
+}
+a{
+  text-decoration: none;
+}
+
+.top-strip{
+  height: 50px;
+  background: #10ABC1;
+  color: white;
+  text-align: center;
+}
+.sale{
+  transform: translate(0%,100%);
+}
+
+.title-bar{
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-div{
+  margin: auto;
+  width: 80%;
+}
+.top-input{
+  height: 33px;
+}
+.input-logo-button{
+  display: flex;
+  justify-content: flex-end;
+}
+.input-logo-button button{
+  height: 33px;
+  width: 33px;
+}
+.logo-and-input{
+  width: 40%;
+  position: relative;
+  right: 9%;
+  margin-top: 21px;
+}
+
+/*fast shipping div*/
+.fast-shipping-guarantee h2{
+  text-align: center;
+  font-size: 12px;
+}
+
+.fast-shipping{
+  color: #FF5100;
+}
+.fast-shipping-right{
+  display: flex;
+  justify-content: space-around;
+}
+
+.guarantee{
+
+}
+/*fast shipping div END*/
+
+
+/*BLOG NAV*/
+.blog-nav{
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 10px;
+}
+.blog-nav li{
+  margin: 20px;
+  text-decoration: none;
+}
+
+/*BLOG NAV END*/
+
+
+.products-nav{
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
+  width: 800px;
+  margin-left: 10px;
+}
+.products-nav li:hover{
+  color: #FF5100;
+}
+
+
+
+/*FOOTER STARTS HERE*/
+
+.footer-body{
+  margin: auto;
+}
+.orange-and-black{
+  width: 98.7%;
+}
+.orange-need-help {
+    background: linear-gradient(#FF8601, #FF5500);
+    height: 50px;
+    padding: 24px 0px 0px 0px;
+    width: 100%;
+    margin-top: 40px;
+}
+.orange-need-help img {
+    position: relative;
+    top: -5px;
+    width: 90%;
+}
+
+.help-links-div{
+  background: #404040;
+  display: flex;
+  justify-content: space-around;
+  color:white;
+}
+
+.help-links-head li{
+  color: white;
+  font-weight: bold;
+}
+
+.links{
+  color: white;
+  text-align: left;
+}
+.links-container{
+  display: flex;
+  justify-content: space-around;
+}
+.help-links-container{
+  display: flex;
+  justify-content: space-around;
+}
+
+.connect{
+  text-align: left;
+}
+
+.orange-button-input{
+  width: 243px;
+  height: 37px;
+}
+
+
+.orange-button {
+    font: 12px Arial, Helvetica, sans-serif;
+    background: #FE4F00;
+    color: white;
+    border: none;
+    font-size: 16px;
+    padding-bottom: 2px;
+    height: 30px;
+    width: 30px;
+}
+
+.social-media-buttons{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.orange-square {
+    background: #FD4F00;
+    width: 41px;
+    height: 41px;
+    text-align: center;
+    font-size: 36px;
+    margin-top: 5px;
+    color: #404040;
+}

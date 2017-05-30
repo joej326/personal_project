@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html ng-app = 'myApp'>
+  <head>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/homeStyle.css">
+    <link rel="stylesheet" href="./styles/mainStyle.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>joe</title>
+  </head>
+  <body>
+
+<!-- width = 1420 x 400 -->
+
+<div class="top-strip">
+  <h3 class = 'sale'>SALE!</h3>
+</div>
+
+<div class="container main-div">
+
+
+<div class="container-fluid">
+
+<div class="row">
+
+
+<div class="col-sm-6 logo-and-input">
+  
+  <div class="input-logo-button">
+  <a ui-sref="home"><img src="./images/daddies-logo-big.png" alt="daddies logo"></a>
+
+
+
+  <input class='top-input' type="text" placeholder="search and enjoy...">
+  <button type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+  </div>
+</div>
+
+
+<div class="col-sm-6 fast-shipping-right">
+
+  <div class="fast-shipping-guarantee">
+    <h2 class = 'fast-shipping'>FAST SHIPPING</h2>
+    <h2 class = 'guarantee'>GUARANTEE</h2>
+  </div>
+
+  <h1><i class="fa fa-question-circle" aria-hidden="true"></i></h1>
+  <div class="person-logo-div">
+    <h1><i class="fa fa-user" aria-hidden="true"></i></h1>
+  </div>
+  <h1><i class="fa fa-shopping-cart" aria-hidden="true"></i></h1>
+  <h3>CART</h3>
+</div>
+</div>
+</div>
+<!-- flexbox title logo END -->
+
+<!-- blog nav start -->
+
+  <ul class="blog-nav">
+    <a href="#"><li>SHOP DADDIES</li></a>
+    <a href="#"><li>BLOG</li></a>
+    <a href="#"><li>BUYER'S GUIDE</li></a>
+  </ul>
+
+<!-- blog nav end -->
+
+
+<!-- products nav START -->
+<ul class = 'products-nav'>
+  <a ui-sref="longboards"><li>Longboard</li></a>
+  <li>Skateboard</li>
+  <li>Snowboard</li>
+  <li>Clothing</li>
+  <li>Shoes</li>
+  <li>Accessories</li>
+  <li>Brands</li>
+  <li>Gift Cards</li>
+  <li>Smokin' Deals</li>
+</ul>
+<!-- products nav END -->
+
+
+
+<ui-view></ui-view>
+
+
+<div class="container footer-body">
+  <div class="orange-and-black">
+
+
+  <div class="orange-need-help">
+    <img src="./images/footer/orange-footer-test-daddies.png" alt="contact info">
+  </div>
+
+  <div class="help-links-div">
+
+    <div class="links">
+      <h2>LINKS</h2>
+      <div class="links-container">
+
+
+      <div class="links-left">
+        <ul>
+          <li>About Us</li>
+          <li>Contact Us - Don't be shy!</li>
+          <li>Portland Store</li>
+          <li>Daddies Team Riders</li>
+          <li>Stickers</li>
+          <li>Gift Certificates</li>
+          <li>Awards</li>
+          <li>Customer Reviews</li>
+          <li>Monthly Wheel</li>
+          <li>Event Sponsorship</li>
+        </ul>
+      </div>
+      <div class="links-right">
+        <ul>
+          <li>International Shipping</li>
+          <li>USA Shipping</li>
+          <li>Fast Shipping Guarantee</li>
+          <li>Track Your Order</li>
+          <li>Returns</li>
+          <li>Warranty Information</li>
+          <li>Privacy Policy</li>
+          <li>Order Changes</li>
+          <li>Insanity of the Month</li>
+          <li>Sitemap</li>
+        </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="connect">
+      <h2>CONNECT</h2>
+      <p>Newsletter Signup</p>
+      <input class = 'orange-button-input' type="text">
+      <button class = 'orange-button' type="button">>></button>
+      <div class="social-media-buttons">
+        <div class="orange-square"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+        <div class="orange-square"><i class="fa fa-tumblr" aria-hidden="true"></i></div>
+        <div class="orange-square"><i class="fa fa-pinterest-p" aria-hidden="true"></i></div>
+        <div class="orange-square"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+        <div class="orange-square"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+        <div class="orange-square"><i class="fa fa-youtube-play" aria-hidden="true"></i></div>
+      </div>
+    </div>
+    <div class="find-us">
+      <h2>FIND US</h2>
+
+    </div>
+  </div>
+
+</div>
+</div>
+</div>
+  </body>
+  <script src = 'https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js'></script>
+  <script src="https://use.fontawesome.com/1f72b8ff1e.js"></script>
+  <script src = 'https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.js'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+  <script src="https://d3js.org/d3.v4.js"></script>
+  <script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+  integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+  <script src = './js/app.js'></script>
+  <script src = './js/controllers/homeCtrl.js'></script>
+  <script src = './js/controllers/longboardCtrl.js'></script>
+  <script src = './js/services/homeService.js'></script>
+  <script src = './js/services/longboardServ.js'></script>
+</html>
