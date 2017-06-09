@@ -1,7 +1,9 @@
 angular.module('myApp')
-      .service('homeService',function($http){
+      .service('loginServ',function($http){
+
 
 this.login = function(){
   return $http.get('/auth');
 }
+this.login();
 })

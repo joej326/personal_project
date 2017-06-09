@@ -4,6 +4,8 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/homeStyle.css">
     <link rel="stylesheet" href="./styles/mainStyle.css">
+    <link rel="stylesheet" href="./styles/longboardStyle.css">
+    <link rel="stylesheet" href="./styles/longboardDetails.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css"/>
     <meta charset="utf-8">
@@ -14,72 +16,160 @@
 
 <!-- width = 1420 x 400 -->
 
-<div class="top-strip">
-  <h3 class = 'sale'>SALE!</h3>
-</div>
+<!-- <div class="top-strip">
+  <h3 class = 'sale'>WELCOME!</h3>
+</div> -->
 
 <div class="container main-div">
 
 
-<div class="container-fluid">
-
-<div class="row">
 
 
-<div class="col-sm-6 logo-and-input">
-  
-  <div class="input-logo-button">
-  <a ui-sref="home"><img src="./images/daddies-logo-big.png" alt="daddies logo"></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flexy">
+
+
+
+  <a ui-sref="home"><img class ='daddies-logo' src="./images/daddies-logo-big.png" alt="daddies logo"></a>
+
+
 
 
 
   <input class='top-input' type="text" placeholder="search and enjoy...">
-  <button type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
-  </div>
-</div>
 
 
-<div class="col-sm-6 fast-shipping-right">
+
+  <button class='btn btn-warning' type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+
+
+
+
 
   <div class="fast-shipping-guarantee">
-    <h2 class = 'fast-shipping'>FAST SHIPPING</h2>
-    <h2 class = 'guarantee'>GUARANTEE</h2>
+    <p class = 'fast-shipping'>FAST SHIPPING</p>
+    <p class = 'guarantee'>GUARANTEE</p>
   </div>
 
-  <h1><i class="fa fa-question-circle" aria-hidden="true"></i></h1>
-  <div class="person-logo-div">
-    <h1><i class="fa fa-user" aria-hidden="true"></i></h1>
-  </div>
-  <h1><i class="fa fa-shopping-cart" aria-hidden="true"></i></h1>
-  <h3>CART</h3>
+<div class="logos">
+
+
+  <h1 class = 'cart-logos'><i class="fa fa-question-circle" aria-hidden="true"></i></h1>
+
+  <h1 class = 'cart-logos'><i class="fa fa-user" aria-hidden="true"></i></h1>
+
+  <a ui-sref='cart'><h1 class = 'cart-logos'><i class="fa fa-shopping-cart" aria-hidden="true"></i></h1></a>
+  <h1 class = 'cart-word cart-logos'>CART</h1>
 </div>
-</div>
+<a href="/auth"><h5 class = 'login'>Login</h5></a>
 </div>
 <!-- flexbox title logo END -->
 
 <!-- blog nav start -->
+<div class="shop-daddies">
+
 
   <ul class="blog-nav">
     <a href="#"><li>SHOP DADDIES</li></a>
     <a href="#"><li>BLOG</li></a>
     <a href="#"><li>BUYER'S GUIDE</li></a>
   </ul>
-
+</div>
 <!-- blog nav end -->
 
 
 <!-- products nav START -->
+<div class="container-fluid">
+
+
 <ul class = 'products-nav'>
+  <div class="container">
+<div class="container">
+
+<div class="row">
+
+<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+
+
+  <div class="row">
+
+  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 list-items">
+
+
   <a ui-sref="longboards"><li>Longboard</li></a>
+  </div>
+  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 list-items">
+
+
   <li>Skateboard</li>
+    </div>
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 list-items">
+
+
   <li>Snowboard</li>
+  </div>
+  </div>
+  </div>
+
+  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+
+
+
+  <div class="row">
+
+  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 list-items">
+
+
   <li>Clothing</li>
+  </div>
+  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 list-items">
+
+
   <li>Shoes</li>
+  </div>
+  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 list-items">
+
+
   <li>Accessories</li>
+  </div>
+  </div>
+  </div>
+
+
+
+<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+
+
+  <div class="row">
+
+  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 list-items">
   <li>Brands</li>
+  </div>
+  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 list-items">
   <li>Gift Cards</li>
+  </div>
+  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 list-items">
   <li>Smokin' Deals</li>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
 </ul>
+</div>
 <!-- products nav END -->
 
 
@@ -95,17 +185,27 @@
     <img src="./images/footer/orange-footer-test-daddies.png" alt="contact info">
   </div>
 
-  <div class="help-links-div">
+  <div class="help-links-div container">
+
+<div class="row">
+
+<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+
+
 
     <div class="links">
-      <h2>LINKS</h2>
-      <div class="links-container">
+      <h2 class = 'responsive-bottom links'>LINKS</h2>
+      <div class="links-container container-fluid">
+
+<div class="row">
+
+<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
 
 
       <div class="links-left">
         <ul>
           <li>About Us</li>
-          <li>Contact Us - Don't be shy!</li>
+          <li>Contact Us<span class='dont-be-shy'> - Don't be shy!</span></li>
           <li>Portland Store</li>
           <li>Daddies Team Riders</li>
           <li>Stickers</li>
@@ -116,6 +216,10 @@
           <li>Event Sponsorship</li>
         </ul>
       </div>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+
+
       <div class="links-right">
         <ul>
           <li>International Shipping</li>
@@ -132,9 +236,15 @@
         </div>
       </div>
     </div>
+    </div>
+    </div>
+</div>
+
+<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+
 
     <div class="connect">
-      <h2>CONNECT</h2>
+      <h2 class = 'responsive-bottom'>CONNECT</h2>
       <p>Newsletter Signup</p>
       <input class = 'orange-button-input' type="text">
       <button class = 'orange-button' type="button">>></button>
@@ -147,12 +257,18 @@
         <div class="orange-square"><i class="fa fa-youtube-play" aria-hidden="true"></i></div>
       </div>
     </div>
+  </div>
+
+  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+
+
     <div class="find-us">
-      <h2>FIND US</h2>
+      <h2 class = 'responsive-bottom '>FIND US</h2>
 
     </div>
   </div>
-
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -161,6 +277,7 @@
   <script src="https://use.fontawesome.com/1f72b8ff1e.js"></script>
   <script src = 'https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.js'></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-zoom/1.7.20/jquery.zoom.js"></script>
   <script src="https://d3js.org/d3.v4.js"></script>
   <script
   src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
@@ -170,6 +287,14 @@
   <script src = './js/app.js'></script>
   <script src = './js/controllers/homeCtrl.js'></script>
   <script src = './js/controllers/longboardCtrl.js'></script>
+  <script src = './js/controllers/longboardDetailsCtrl.js'></script>
+  <script src = './js/controllers/cartCtrl.js'></script>
+  <script src = './js/controllers/loginCtrl.js'></script>
   <script src = './js/services/homeService.js'></script>
   <script src = './js/services/longboardServ.js'></script>
+  <script src = './js/services/longboardDetailsService.js'></script>
+  <script src = './js/services/cartServ.js'></script>
+  <script src = './js/services/loginServ.js'></script>
+  <script src = './js/directives/longboardDir.js'></script>
+  <script src = './js/directives/zoomDir.js'></script>
 </html>

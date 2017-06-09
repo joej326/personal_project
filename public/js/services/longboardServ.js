@@ -1,5 +1,12 @@
 angular.module('myApp')
-      .service('longboardServ', function(){
+      .service('longboardServ', function($http){
 
-this.test = 'hey man this is a test or something';
+
+this.getLongboards = function(){
+  return $http.get('/api/longboards');
+}
+
+this.filterByColor = function(color){
+  return $http.get('/api/longboards?color=' + color);
+}
 })

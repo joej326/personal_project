@@ -1,2 +1,89 @@
-<h1>LONGBOARDS!!</h1>
-{{test}}
+
+
+<div class="container-fluid filters-container">
+  <div class="row">
+
+
+<div class="col-md-6 col-xs-6 col-sm-6">
+  <div class="alpha-price-filter">
+    <p ng-click='priceOrder("low")'>price Low-High</p>
+    <p ng-click='priceOrder("high")'>price High-Low</p>
+  </div>
+</div>
+
+
+
+<div class="col-md-6 col-xs-6 col-sm-6">
+<div class="color-filters container-fluid">
+  <h4>Filter by color:</h4>
+  <!-- first row of colors -->
+  <div class="row">
+    <div class="col-md-3 col-sm-3 col-xs-3 col-lg-3 color-flex">
+      <div ng-click='filterByColor("blue")' class="color blue"></div>
+    </div>
+    <div class="col-md-3 col-sm-3 col-xs-3 col-lg-3 color-flex">
+      <div ng-click='filterByColor("red")' class="color red"></div>
+    </div>
+    <div class="col-md-3 col-sm-3 col-xs-3 col-lg-3 color-flex">
+      <div ng-click='filterByColor("white")' class="color white"></div>
+    </div>
+    <div class="col-md-3 col-sm-3 col-xs-3 col-lg-3 color-flex">
+      <div ng-click='filterByColor("black")' class="color black"></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3 col-sm-3 col-xs-3 col-lg-3 color-flex">
+      <div ng-click='filterByColor("brown")' class="color brown"></div>
+    </div>
+    <div class="col-md-3 col-sm-3 col-xs-3 col-lg-3 color-flex">
+      <div ng-click='filterByColor("green")' class="color green"></div>
+    </div>
+    <div class="col-md-3 col-sm-3 col-xs-3 col-lg-3 color-flex">
+      <div ng-click='filterByColor("gray")' class="color gray"></div>
+    </div>
+    <div class="col-md-3 col-sm-3 col-xs-3 col-lg-3 color-flex">
+      <div ng-click='filterByColor("orange")' class="color orange"></div>
+    </div>
+  </div>
+<div class="row">
+  <div class="col-md-3 col-sm-3 col-xs-3 col-lg-3 color-flex">
+    <div ng-click='filterByColor("pink")' class="color pink"></div>
+  </div>
+  <div class="col-md-3 col-sm-3 col-xs-3 col-lg-3 color-flex">
+    <div ng-click='filterByColor("purple")' class="color purple"></div>
+  </div>
+  <div class="col-md-3 col-sm-3 col-xs-3 col-lg-3 color-flex">
+    <div ng-click='filterByColor("yellow")' class="color yellow"></div>
+  </div>
+  <div class="col-md-3 col-sm-3 col-xs-3 col-lg-3 color-flex">
+    <div class="color turqoise"></div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="longboard-row">
+
+
+  <div ng-repeat= 'longboard in longboards | orderBy: order'>
+    <div class="visible-portion">
+      <img ui-sref='longboardDetails({id: longboard.id})' ng-src="{{longboard.image}}" alt="longboard">
+      <div longboard-dir class="animated-div">
+        <h4>{{longboard.boardname}}</h4>
+        <h2>${{longboard.price}}</h2>
+
+      <div class="hidden-div">
+        <p>Length: {{longboard.boardlength}}''</p>
+        <p>Width: {{longboard.boardwidth}}''</p>
+        <p>Wheelbase: {{longboard.wheelbase}}''</p>
+        <p>Construction: {{longboard.contruction}}</p>
+        <p>Concave: {{longboard.concave}}</p>
+        <p>Flex: {{longboard.flex}}</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

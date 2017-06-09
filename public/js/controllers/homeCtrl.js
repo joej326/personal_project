@@ -1,7 +1,9 @@
 angular.module('myApp')
       .controller('homeCtrl',function($scope,homeService){
 
-$scope.test = homeService.test;
 
+$scope.login = function(){
+  homeService.login();
+}
 
 })

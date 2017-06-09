@@ -1,0 +1,11 @@
+body{
+  text-align: center;
+}
+.space{
+  width: 20vw;
+  height: 550px;
+}
+.flex-div{
+  display: flex;
+  justify-content: center;
+}

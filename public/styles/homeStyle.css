@@ -46,21 +46,27 @@ hr{
   color: gray;
 }
 .about-container{
-  /*display: flex;
-  justify-content: space-between;*/
+  display: flex;
+  justify-content: space-between;
 }
 .about-daddies {
     position: relative;
     text-align: left;
     line-height: 18px;
+    overflow: scroll;
     height: 250px;
     background: #E5E5E5;
-    width: 136%;
+    /*width: 136%;*/
 
 }
+.about-daddies p{
+    padding: 20px;
+    font-size: 1vw;
+}
 
-.team-riders{
-  margin-left: 33%;
+.team-riders img{
+  position: relative;
+
 }
 
 
