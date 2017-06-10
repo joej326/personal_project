@@ -107,6 +107,8 @@ const userCtrl = require('./controllers/userCtrl.js');
 
 app.get('/api/longboards', mainCtrl.filterColors);
 app.get('/api/longboards/:id', mainCtrl.getSingleBoard);
+app.post('/api/cart/',mainCtrl.addToCart);
+app.delete('/api/cart/',mainCtrl.removeBoard);
 
 
 

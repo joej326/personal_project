@@ -1,21 +1,26 @@
 
 
-<div class="container-fluid filters-container">
-  <div class="row">
+<div class='flex-filters'>
 
 
-<div class="col-md-6 col-xs-6 col-sm-6">
+
+
   <div class="alpha-price-filter">
-    <p ng-click='priceOrder("low")'>price Low-High</p>
-    <p ng-click='priceOrder("high")'>price High-Low</p>
+    <h4>Sort by price:</h4>
+    <ul class = 'nav nav-pills nav-stacked'>
+
+
+    <li ng-click='priceOrder("low")'><a>Low-High</a></li>
+    <li ng-click='priceOrder("high")'><a>High-Low</a></li>
+    </ul>
   </div>
-</div>
 
 
 
-<div class="col-md-6 col-xs-6 col-sm-6">
-<div class="color-filters container-fluid">
-  <h4>Filter by color:</h4>
+
+
+<div class="color-filters">
+  <h4>Sort by color:</h4>
   <!-- first row of colors -->
   <div class="row">
     <div class="col-md-3 col-sm-3 col-xs-3 col-lg-3 color-flex">
@@ -61,13 +66,13 @@
 </div>
 </div>
 </div>
-</div>
-</div>
+
+
 
 <div class="longboard-row">
 
 
-  <div ng-repeat= 'longboard in longboards | orderBy: order'>
+  <div class = 'repeated-div' ng-repeat= 'longboard in longboards | orderBy: order'>
     <div class="visible-portion">
       <img ui-sref='longboardDetails({id: longboard.id})' ng-src="{{longboard.image}}" alt="longboard">
       <div longboard-dir class="animated-div">

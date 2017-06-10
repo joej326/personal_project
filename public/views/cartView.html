@@ -1,1 +1,29 @@
-{{test}}
+<div class="main-cart-div">
+
+
+
+
+
+<div ng-repeat = 'product in cart'>
+<div class="separate-price">
+
+
+
+
+  <div class="image-and-name">
+    <div class="cart-flex">
+<img class = 'cart-item-image' ng-src="{{product.image}}" alt="">
+<h4>{{product.boardname}}</h4>
+</div>
+  </div>
+  <div class="price-div">
+
+
+<h5 class = 'cart-price'><span id ='cart-price-word'>Price</span>: ${{product.price}}</h5>
+<button ng-click='removeBoard(product)' class = 'btn btn-danger trash-button' type="button"><i class="fa fa-trash" aria-hidden="true"></i></button>
+</div>
+</div>
+
+</div>
+<h2 class = 'total'>TOTAL: ${{total}}</h2>
+</div>

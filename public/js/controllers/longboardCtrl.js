@@ -4,7 +4,7 @@ angular.module('myApp')
 
 $scope.getLongboards =
   longboardServ.getLongboards().then(function(response){
-    console.log(response);
+
     $scope.longboards = response.data;
   });
 
@@ -16,7 +16,7 @@ $scope.filterByColor = function(color){
 
 $scope.priceOrder = function(value){
   if(value === 'high'){
-    $scope.order = "price : reverse : true"
+    $scope.order = "-price";
   }else if(value ==='low'){
     $scope.order = 'price'
   }

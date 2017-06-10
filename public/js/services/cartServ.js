@@ -1,5 +1,11 @@
 angular.module('myApp')
-      .service('cartServ',function(){
+      .service('cartServ',function($http){
 
-this.test = 'cart test';
+this.removeBoard = function(product){
+  return $http({
+    method: 'DELETE',
+    url: '/api/cart',
+    data: {product: product}
+  })
+}
 })

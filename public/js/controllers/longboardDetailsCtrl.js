@@ -1,5 +1,5 @@
 angular.module('myApp')
-      .controller('longboardDetailsCtrl', function($scope,longboardDetailsServ,$stateParams){
+      .controller('longboardDetailsCtrl', function($scope,longboardDetailsServ,cartServ,$stateParams){
 
 $scope.longboardId = $stateParams.id;
 
@@ -14,6 +14,14 @@ $scope.getSingleBoard =
 
     }
   })
+
+  $scope.addToCart =function(product){
+  console.log(`going to service with ${product.boardname}`);
+    longboardDetailsServ.addToCart(product).then(function(response){
+      $scope.cart = response.data;
+      // console.log($scope.cart);
+    })
+  }
 
 
 

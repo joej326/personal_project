@@ -1,5 +1,8 @@
 .alpha-price-filter{
   border: 1px solid black;
+  background: linear-gradient(to bottom right, #bdbdbd, white);
+  height: 160px;
+  padding: 0vw 4vw 0vw 4vw;
 }
 .color{
   width: 2vw;
@@ -9,9 +12,12 @@
   flex-shrink: 0;
 }
 .color-filters {
-    width: 23vw;
+    /*width: 23vw;*/
     border: 2px solid gray;
     margin-bottom: 35px;
+    background: linear-gradient(to bottom right, #bdbdbd, white);
+    height: 160px;
+    padding: 0vw 1vw 0vw 1vw;
 }
 .color-flex{
   display: flex;
@@ -73,4 +79,9 @@
   /*border: 5px solid black;*/
   overflow: hidden;
   max-height: 375px;
+}
+.flex-filters{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
