@@ -24,8 +24,12 @@
 <h4>Construction: {{singleBoard.contruction}}</h4>
 <h4>Concave: {{singleBoard.concave}}</h4>
 <h4>Flex: {{singleBoard.flex}}</h4>
+<div class="description-div">
+  <h5>Description:</h5>
+  <p>{{singleBoard.description}}</p>
+</div>
 
-<button ui-sref='cart' ng-click='addToCart(singleBoard)' type="button" name="button">ADD TO CART</button>
+<button class = 'add-to-cart-button btn' ui-sref='cart' ng-click='addToCart(singleBoard)' type="button" name="button">ADD TO CART</button>
 
 
 </div>

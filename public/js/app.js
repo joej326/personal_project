@@ -1,5 +1,7 @@
 angular.module('myApp',['ui.router'])
-      .config(function($stateProvider,$urlRouterProvider){
+      .config(function($stateProvider,$urlRouterProvider,$httpProvider){
+
+        $httpProvider.defaults.headers.delete = { "Content-Type": "application/json;charset=utf-8" };
 
         $stateProvider
 

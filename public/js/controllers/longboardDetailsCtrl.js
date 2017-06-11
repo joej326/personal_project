@@ -16,7 +16,7 @@ $scope.getSingleBoard =
   })
 
   $scope.addToCart =function(product){
-  console.log(`going to service with ${product.boardname}`);
+  
     longboardDetailsServ.addToCart(product).then(function(response){
       $scope.cart = response.data;
       // console.log($scope.cart);

@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html ng-app = 'myApp'>
   <head>
-    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <!-- <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/homeStyle.css">
     <link rel="stylesheet" href="./styles/mainStyle.css">
     <link rel="stylesheet" href="./styles/longboardStyle.css">
     <link rel="stylesheet" href="./styles/longboardDetails.css">
-    <link rel="stylesheet" href="./styles/cartStyle.css">
+    <link rel="stylesheet" href="./styles/cartStyle.css"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css"/>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>joe</title>
+    <title>Joey's Longboards</title>
   </head>
   <body>
 
@@ -109,7 +110,7 @@
   <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 list-items">
 
 
-  <a ui-sref="longboards"><li>Longboard</li></a>
+  <a ui-sref="longboards"><li ng-click='getLongboards()'>Longboard</li></a>
   </div>
   <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 list-items">
 
@@ -284,9 +285,9 @@
   src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
   integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
   crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
-  <script src = './js/app.js'></script>
-  <script src = './js/controllers/homeCtrl.js'></script>
+
+  <script src = './js/bundle.js'></script>
+  <!-- <script src = './js/controllers/homeCtrl.js'></script>
   <script src = './js/controllers/longboardCtrl.js'></script>
   <script src = './js/controllers/longboardDetailsCtrl.js'></script>
   <script src = './js/controllers/cartCtrl.js'></script>
@@ -298,5 +299,5 @@
   <script src = './js/services/loginServ.js'></script>
   <script src = './js/directives/longboardDir.js'></script>
   <script src = './js/directives/zoomDir.js'></script>
-  <script src = './js/directives/cartDir.js'></script>
+  <script src = './js/directives/cartDir.js'></script> -->
 </html>

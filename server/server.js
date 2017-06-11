@@ -11,7 +11,7 @@ const config = require('../.config');
 
 const app = module.exports = express();
 
-app.use(express.static('public'));
+app.use(express.static('dist'));
 
 app.use(bodyParser.json());
 app.use(session({

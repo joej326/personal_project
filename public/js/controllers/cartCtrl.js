@@ -4,16 +4,20 @@ angular.module('myApp')
         $scope.addToCart =function(){
 
           longboardDetailsServ.addToCart().then(function(response){
-            console.log(response)
+
             $scope.cart = response.data[0];
             $scope.total = response.data[1];
-            console.log(`total: ${$scope.total}`);
+
           })
         }
         $scope.addToCart();
 
         $scope.removeBoard = function(product){
-          cartServ.removeBoard(product);
+          cartServ.removeBoard(product).then(function(response){
+            console.log(response);
+            $scope.cart = response.data[0];
+            $scope.total = response.data[1];
+          });
         }
 
 

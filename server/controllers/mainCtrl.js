@@ -1,6 +1,9 @@
 const app = require('./../server.js');
 var db = app.get('db');
 
+let cart = [];
+let total = 0;
+
 module.exports = {
 
   filterColors: (req,res) => {
@@ -24,34 +27,46 @@ module.exports = {
   },
 
   addToCart: (req,res) => {
-    if(!req.session.cart){
-      req.session.cart = [];
-    }
+
 
     let product = req.body.product;
 
 
-    req.session.cart.push(product);
-    for(let x = 0;x<req.session.cart.length;x++){
-      if(req.session.cart[x] ===undefined){
-        req.session.cart.splice(x,1);
+    cart.push(product);
+    for(let x = 0;x<cart.length;x++){
+      if(cart[x] ===undefined){
+        cart.splice(x,1);
       }
 
     }
-    let total = 0;
 
 
 
-    for(let x = 0;x<req.session.cart.length;x++){
-      total += req.session.cart[x].price;
+    total = 0;
+    for(let x = 0;x<cart.length;x++){
+      total += cart[x].price;
     }
 
 
-    res.status(200).send([req.session.cart,total]);
+    res.status(200).send([cart,total]);
   },
 
   removeBoard: (req,res) => {
-    
+    console.log(req.body.product.id);
+
+
+    for(let i =0;i<cart.length;i++){
+      if(cart[i].id === req.body.product.id){
+        cart.splice(i,1);
+      }
+    }
+    console.log(cart)
+    total = 0;
+    for(let x = 0;x<cart.length;x++){
+      total += cart[x].price;
+    }
+
+    res.status(200).send([cart,total])
   }
 
 }
