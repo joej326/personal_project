@@ -8,28 +8,49 @@
 <div class="space left-div">
 
 </div>
+
+
 <div zoom-dir  class="image-wrap">
+<h2 class = 'details-boardname'>{{singleBoard.boardname}}</h2>
 
 
-  <img ng-src="{{singleBoard.imagelarge}}" alt="longboard image">
+  <img class = 'details-image' ng-src="{{singleBoard.imagelarge}}" alt="longboard image">
 </div>
 
 <div class="space right-div">
 
 </div>
 </div>
-<h4>Length: {{singleBoard.boardlength}}''</h4>
-<h4>Width: {{singleBoard.boardwidth}}''</h4>
-<h4>Wheelbase: {{singleBoard.wheelbase}}''</h4>
-<h4>Construction: {{singleBoard.contruction}}</h4>
-<h4>Concave: {{singleBoard.concave}}</h4>
-<h4>Flex: {{singleBoard.flex}}</h4>
+<div class="metrics-div">
+
+<h4 class = 'bold-underline board-stats-header'>Board Stats:</h4>
+<div class="stats-flex">
+
+<div class="stats-left">
+
+
+<h5>Length: {{singleBoard.boardlength}}''</h5>
+<h5>Width: {{singleBoard.boardwidth}}''</h5>
+<h5>Wheelbase: {{singleBoard.wheelbase}}''</h5>
+<h5>Construction: {{singleBoard.contruction}}</h5>
+<h5>Concave: {{singleBoard.concave}}</h5>
+<h5>Flex: {{singleBoard.flex}}</h5>
+</div>
+<div class="stats-right">
+  <h5>Cruising: {{singleBoard.cruising}}</h5>
+  <h5>Freeride: {{singleBoard.freeride}}</h5>
+  <h5>Downhill: {{singleBoard.downhill}}</h5>
+  <h5>Push: {{singleBoard.push}}</h5>
+  <h5>Sliding: {{singleBoard.sliding}}</h5>
+</div>
+</div>
+</div>
 <div class="description-div">
-  <h5>Description:</h5>
+  <h5 class = 'bold-underline'>Description:</h5>
   <p>{{singleBoard.description}}</p>
 </div>
 
-<button class = 'add-to-cart-button btn' ui-sref='cart' ng-click='addToCart(singleBoard)' type="button" name="button">ADD TO CART</button>
+<button class = 'add-to-cart-button' ui-sref='cart' ng-click='addToCart(singleBoard)' type="button" name="button">ADD TO CART</button>
 
 
 </div>
