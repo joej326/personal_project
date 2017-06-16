@@ -1,29 +1,19 @@
+<!-- sets text-align to left for everything in the cart -->
 <div class="main-cart-div">
+    <div ng-repeat='product in cart'>
+        <div class="name-and-price-container"> <!--container that separates the price from the name&img -->
+            <div class="image-and-name">
+                <div class="cart-flex"> <!--aligns the img and the name of the board in the cart-->
+                    <img class='cart-item-image' ng-src="{{product.image}}" alt="">
+                    <h4>{{product.boardname}}</h4>
+                </div>
+            </div>
+            <div class="price-button-div"> <!--contains the price of the single board and a delete button-->
+                <h5 class='cart-price'><span id ='cart-price-word'>Price</span>: ${{product.price}}</h5>
+                <button ng-click='removeBoard(product)' class='btn btn-danger trash-button' type="button"><i class="fa fa-trash" aria-hidden="true"></i></button>
+            </div>
+        </div>
 
-
-
-
-
-<div ng-repeat = 'product in cart'>
-<div class="separate-price">
-
-
-
-
-  <div class="image-and-name">
-    <div class="cart-flex">
-<img class = 'cart-item-image' ng-src="{{product.image}}" alt="">
-<h4>{{product.boardname}}</h4>
-</div>
-  </div>
-  <div class="price-div">
-
-
-<h5 class = 'cart-price'><span id ='cart-price-word'>Price</span>: ${{product.price}}</h5>
-<button ng-click='removeBoard(product)' class = 'btn btn-danger trash-button' type="button"><i class="fa fa-trash" aria-hidden="true"></i></button>
-</div>
-</div>
-
-</div>
-<h2 class = 'total'>TOTAL: ${{total}}</h2>
+    </div>
+    <h2 class='total'>TOTAL: ${{total}}</h2>
 </div>

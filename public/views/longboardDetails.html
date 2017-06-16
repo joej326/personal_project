@@ -1,56 +1,39 @@
-<!-- <img id="zoom_05" src="small/image1.png" data-zoom-image="large/image1.jpg"/> -->
-
-
 <div class="outer-wrap">
-
-<div class="flex-div">
-
-<div class="space left-div">
-
-</div>
-
-
-<div zoom-dir  class="image-wrap">
-<h2 class = 'details-boardname'>{{singleBoard.boardname}}</h2>
-
-
-  <img class = 'details-image' ng-src="{{singleBoard.imagelarge}}" alt="longboard image">
-</div>
-
-<div class="space right-div">
-
-</div>
-</div>
-<div class="metrics-div">
-
-<h4 class = 'bold-underline board-stats-header'>Board Stats:</h4>
-<div class="stats-flex">
-
-<div class="stats-left">
-
-
-<h5>Length: {{singleBoard.boardlength}}''</h5>
-<h5>Width: {{singleBoard.boardwidth}}''</h5>
-<h5>Wheelbase: {{singleBoard.wheelbase}}''</h5>
-<h5>Construction: {{singleBoard.contruction}}</h5>
-<h5>Concave: {{singleBoard.concave}}</h5>
-<h5>Flex: {{singleBoard.flex}}</h5>
-</div>
-<div class="stats-right">
-  <h5>Cruising: {{singleBoard.cruising}}</h5>
-  <h5>Freeride: {{singleBoard.freeride}}</h5>
-  <h5>Downhill: {{singleBoard.downhill}}</h5>
-  <h5>Push: {{singleBoard.push}}</h5>
-  <h5>Sliding: {{singleBoard.sliding}}</h5>
-</div>
-</div>
-</div>
-<div class="description-div">
-  <h5 class = 'bold-underline'>Description:</h5>
-  <p>{{singleBoard.description}}</p>
-</div>
-
-<button class = 'add-to-cart-button' ui-sref='cart' ng-click='addToCart(singleBoard)' type="button" name="button">ADD TO CART</button>
-
-
+  <!-- made a flex div that contains the longboard img and an empty div on either
+  side to allow for auto-incrementing margins on either side of the img -->
+    <div class="flex-div">
+        <div class="space left-div">
+        </div>
+        <div zoom-dir class="image-wrap">
+            <h2 class='details-boardname'>{{singleBoard.boardname}}</h2>
+            <img class='details-image' ng-src="{{singleBoard.imagelarge}}" alt="longboard image">
+        </div>
+        <div class="space right-div">
+        </div>
+    </div>
+    <div class="metrics-div"> <!--contains all of the stats for the board with a thin black border-->
+        <h4 class='bold-underline board-stats-header'>Board Stats:</h4>
+        <div class="stats-flex">
+            <div class="stats-left">
+                <h5>Length: {{singleBoard.boardlength}}''</h5>
+                <h5>Width: {{singleBoard.boardwidth}}''</h5>
+                <h5>Wheelbase: {{singleBoard.wheelbase}}''</h5>
+                <h5>Construction: {{singleBoard.contruction}}</h5>
+                <h5>Concave: {{singleBoard.concave}}</h5>
+                <h5>Flex: {{singleBoard.flex}}</h5>
+            </div>
+            <div class="stats-right">
+                <h5>Cruising: {{singleBoard.cruising}}</h5>
+                <h5>Freeride: {{singleBoard.freeride}}</h5>
+                <h5>Downhill: {{singleBoard.downhill}}</h5>
+                <h5>Push: {{singleBoard.push}}</h5>
+                <h5>Sliding: {{singleBoard.sliding}}</h5>
+            </div>
+        </div>
+    </div>
+    <div class="description-div">
+        <h5 class='bold-underline'>Description:</h5>
+        <p>{{singleBoard.description}}</p>
+    </div>
+    <button class='add-to-cart-button' ui-sref='cart' ng-click='addToCart(singleBoard)' type="button" name="button">ADD TO CART</button>
 </div>
